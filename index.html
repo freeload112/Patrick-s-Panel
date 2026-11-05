@@ -75,8 +75,22 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-header"></div>
+            <div class="card-header">
+                <h3>ORDERS</h3><button id="addOrderBtn">ADD</button>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <tr>
+                        <th>Order</th>
+                        <th>Status</th>
+                        <th>Progress</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tbody id="orderTableBody"></tbody>
+                </table>
+            </div>
         </div>
+        <div class="info-bar"><i class="fas fa-database"></i><span>CRUD Operations Add Edit Delete</span><button id="resetIDBtn">Reset Data</button></div>
     </main>
     <script src="./script.js"></script>
 </body>
