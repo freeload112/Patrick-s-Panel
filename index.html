@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <aside class="side-bar">
+        <div class="side-bar-brand">
+            <i class="fas fa-cubes"></i>
+            <span>Patrick Panel</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="" class="active"><i class="fa-solid fa-table-cells-large"></i><span>Dashboard</span></a>
+            <a href="" class=""><i class="fa-solid fa-chart-line"></i><span>Analytics</span></a>
+            <a href="" class=""><i class="fas fa-users"></i><span>Users</span></a>
+            <a href="" class=""><i class="fa-solid fa-cart-shopping"></i><span>Orders</span></a>
+            <a href="" class=""><i class="fa-solid fa-file"></i><span>Reports</span></a>
+            <a href="" class=""><i class="fas fa-cog"></i><span>Settings</span></a>
+        </nav>
+        <div class="side-bar-footer">
+            <i class="fas fa-user-circle fa-2x"></i>
+            <span>Patrick</span>
+        </div>
+    </aside>
+    <main class="main-content">
+        <div class="top-bar">
+            <h1>
+                Dashboard
+            </h1>
+            <div class="top-bar-actions">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input id="searchInput" type="text" placeholder="search-orders">
+                </div>
+                <i class="fas fa-bell" id="notificationBell"></i>
+                <i class="fas fa-moon" id="teamToggle"></i>
+            </div>
+        </div>
+        <div class="stats-grid">
+            <div class="stats-card">
+                <div class="label">Revenue</div>
+                <div class="value" id="revenueValue">USD 12,000.00</div>
+                <div class="change"><i class="fas fa-arrow-up"></i>12.5%</div>
+            </div>
+            <div class="stats-card">
+                <div class="label">Orders</div>
+                <div class="value" id="orderCount">5</div>
+                <div class="change"><i class="fas fa-arrow-up"></i>81.5%</div>
+            </div>
+            <div class="stats-card">
+                <div class="label">Customers</div>
+                <div class="value">1,000</div>
+                <div class="change"><i class="fas fa-arrow-up"></i>12.5%</div>
+            </div>
+            <div class="stats-card">
+                <div class="label">Conversion</div>
+                <div class="value">5%</div>
+                <div class="change down"><i class="fas fa-arrow-down"></i>3.2%</div>
+            </div>
+        </div>
+        <div class="row-2-col">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Weekly Visitors</h3>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="visitorChart" width="400" height="150"></canvas>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
